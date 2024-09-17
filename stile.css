@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-image: url('img/marca.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #025e88;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #025e88;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked ~ .menu {
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #008080;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 70%;
+    max-height: 70%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.lightbox-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.lightbox-container img {
+    cursor: pointer;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.social-icons a {
+    position: relative;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #008080;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 5px;
+    font-size: 30px;
+    text-align: left;
+}
+h3 {
+    margin-bottom: 14px;
+    color: #008080;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 5px;
+    font-size: 24px;
+    text-align: left;
+}
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #008080;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 48px; 
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 50%; 
+    margin: auto; 
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%; 
+    flex: 0 0 auto;
+}

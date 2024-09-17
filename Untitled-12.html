@@ -1,0 +1,61 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tourret/stile.css">
+    <title>Nombre de tu Página - Fotos</title>
+</head>
+<body>
+    <header>
+        <h1>Nombre de tu Página</h1>
+    </header>
+
+    <div class="content">
+        <label for="menu">☰</label>
+        <input type="checkbox" id="menu"/>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca del Síndrome</a>
+            <a href="fotos.html">Fotos</a>
+        </div>
+        <section id="section3">
+            <h2>Fotos</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <img src="img/car1.jpg" alt="Descripción de la imagen 1">
+                    <img src="img/car2.jpg" alt="Descripción de la imagen 2">
+                    <img src="img/car3.jpg" alt="Descripción de la imagen 2">
+                    <img src="img/car4.jpg" alt="Descripción de la imagen 2">
+                    <img src="img/car5.jpg" alt="Descripción de la imagen 2">
+                    <img src="img/car6.jpg" alt="Descripción de la imagen 2">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+                <button id="prevBtn">Anterior</button>
+                <button id="nextBtn">Siguiente</button>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="img/face.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twit.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/inta.png" alt="Instagram"></a>
+        </div>
+    
+        <p>Preguntas frecuentes: <a href="#faqs">FAQs</a></p>
+    </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen en grande">
+    </div>
+
+    <script src="../Tourret/script.js"></script>
+    <script src="../Tourret/carrucel.js"></script>
+</body>
+</html>
+
+                    
+

@@ -1,0 +1,60 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tourret/stile.css">
+    <title>Mental Quality</title>
+</head>
+<body>
+    <header>
+        <h1>Mental Quality</h1>
+    </header>
+
+    <div class="content">
+        <label for="menu">☰</label>
+        <input type="checkbox" id="menu"/>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="acerca.html">Acerca del Síndrome</a>
+            <a href="fotos.html">Fotos</a>
+        </div>
+        <section id="section3">
+            <h2>Fotos</h2>
+            <div class="carousel-container">
+                <button id="prevBtn" onclick="prevSlide()">❮</button>
+                <div class="carousel-track">
+                    <img src="../Tourret/img/car1.jpg" alt="Descripción de la imagen 1">
+                    <img src="../Tourret/img/car2.jpg" alt="Descripción de la imagen 2">
+                    <img src="../Tourret/img/car3.jpg" alt="Descripción de la imagen 2">
+                    <img src="../Tourret/img/car4.jpg" alt="Descripción de la imagen 2">
+                    <img src="../Tourret/img/car5.jpg" alt="Descripción de la imagen 2">
+                    <img src="../Tourret/img/car6.jpg" alt="Descripción de la imagen 2">
+                   
+                </div>
+                <button id="nextBtn" onclick="nextSlide()">❯</button>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="img/face.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="img/twit.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/inta.png" alt="Instagram"></a>
+        </div>
+    
+    </footer>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagen en grande">
+    </div>
+
+    <script src="../Tourret/script.js"></script>
+    <script src="../Tourret/carrucel.js"></script>
+</body>
+</html>
+
+                    
+
